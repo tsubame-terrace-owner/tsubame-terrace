@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>燕テラス ご予約 | 移転のお知らせ</title>
+<script>
+(function () {
+  var path = window.location.pathname;
+  if (path.indexOf('/tsubame-terrace') === 0) {
+    path = path.replace('/tsubame-terrace', '/reservation');
+  } else if (path === '/' || path === '') {
+    path = '/reservation/';
+  } else {
+    path = '/reservation' + path;
+  }
+  var target = 'https://tsubame-terrace-owner.github.io' + path + window.location.search + window.location.hash;
+  window.location.replace(target);
+})();
+</script>
+<meta http-equiv="refresh" content="1; url=https://tsubame-terrace-owner.github.io/reservation/">
+<style>
+  body { font-family: "Hiragino Mincho ProN", "游明朝", YuMincho, serif;
+         background: #FAF8F4; color: #2C2824; margin: 0; padding: 60px 24px;
+         text-align: center; letter-spacing: 0.05em; }
+  .card { max-width: 480px; margin: 0 auto; background: #fff;
+          border: 1px solid #E8E2D4; padding: 32px 24px; }
+  h1 { font-size: 18px; letter-spacing: 0.15em; margin: 0 0 16px; }
+  p { font-size: 14px; line-height: 1.8; margin: 0 0 20px; }
+  a { color: #7C6F5A; text-decoration: underline; }
+</style>
+</head>
+<body>
+<div class="card">
+  <h1>燕テラス 予約ページ</h1>
+  <p>予約ページの URL が変更されました。<br>自動で移動しない場合は下のリンクから移動してください。</p>
+  <p><a href="https://tsubame-terrace-owner.github.io/reservation/">新しい予約ページを開く</a></p>
+</div>
+</body>
+</html>
